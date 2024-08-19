@@ -1,0 +1,8 @@
+Create a street light installation form. You should capture the following details: installation date, street name, light type, number of lights for the pole, and pole type.
+
+Create a flight booking form. You should capture the following details: departure date, destination, flight number, passenger name, seat preference, and meal preference.
+
+Create a patient intake form. You should capture the following details: appointment date, patient name, date of birth, medical history, current medications, and primary care physician.
+
+
+Create a property listing form. You should capture the following details: listing date, property address, property type, number of bedrooms, square footage, and asking price.

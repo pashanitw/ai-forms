@@ -1,0 +1,5 @@
+# Required packages based on your imports
+python-fasthtml
+pydantic
+openai
+python-dotenv
