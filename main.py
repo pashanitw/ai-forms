@@ -13,6 +13,7 @@ client = OpenAI()
 # App with custom styling to override the pico defaults
 css = Style(":root { --pico-font-size: 100%; --pico-font-family: Pacifico, cursive;}")
 app = FastHTML(hdrs=(picolink, css))
+
 rt = app.route
 
 
@@ -71,9 +72,9 @@ def get_form_response(prompt):
     return completion.choices[0].message
 
 
-def create_dynamic_form(form_data: DynamicForm):
+def create_dynamic_form(form_data: DynamicForm | None):
     if dynamic_form_data is None:
-        return
+        return None
 
     fields = []
 
@@ -171,13 +172,14 @@ def get():
         )(form_prompt),
         Button(
             "Create Form",
-            type="submit",
+            type="button",  # Ensure it's a button, not submit
             id="create_form_button",
             style="margin-top: 15px;",
             hx_post="/update-prompt",
             hx_trigger="click",
             hx_target="#form_area",
             hx_swap="innerHTML",
+            onclick="document.getElementById('form_area').innerHTML = 'Loading...';",
         ),
     )
 
@@ -194,7 +196,10 @@ async def update_prompt(request):
     print(f"Updated Prompt: {form_prompt}")
     if form_prompt:
         dynamic_form_data = get_form_response(form_prompt)
-    return Div(create_dynamic_form(dynamic_form_data.parsed), id="form_area")
+        return Div(create_dynamic_form(dynamic_form_data.parsed), id="form_area")
+
+    # Fallback in case of issues
+    return Div("Error generating form. Please try again.", id="form_area")
 
 
 serve()
