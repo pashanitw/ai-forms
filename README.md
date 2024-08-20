@@ -1,7 +1,7 @@
 # AI Forms
 Instant AI-Powered Form Creation in Seconds## Setup Instructions
 
-[![Watch the video](https://img.youtube.com/vi/your-video-id/0.jpg)](https://youtu.be/9mek_So_QJE)
+[![Watch the video](https://img.youtube.com/vi/your-video-id/0.jpg)](https://youtu.be/watch?v=9mek_So_QJE)
 
 
 1. **Install Required Packages**
