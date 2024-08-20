@@ -1,8 +1,8 @@
 # AI Forms
-Instant AI-Powered Form Creation in Seconds## Setup Instructions
-
+Instant AI-Powered Form Creation in Seconds
 [![Watch the video](https://img.youtube.com/vi/9mek_So_QJE/0.jpg)](https://youtu.be/watch?v=9mek_So_QJE)
 
+## Setup Instructions
 
 1. **Install Required Packages**
 
