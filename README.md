@@ -1,6 +1,8 @@
 # AI Forms
-Generate dynamic forms using text prompts powered by FastHTML
-## Setup Instructions
+Instant AI-Powered Form Creation in Seconds## Setup Instructions
+
+[![Watch the video](https://img.youtube.com/vi/your-video-id/0.jpg)](https://youtu.be/9mek_So_QJE)
+
 
 1. **Install Required Packages**
 
